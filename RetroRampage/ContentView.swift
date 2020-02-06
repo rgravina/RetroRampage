@@ -1,21 +1,11 @@
-//
-//  ContentView.swift
-//  RetroRampage
-//
-//  Created by Robert Gravina on 2020/02/06.
-//  Copyright © 2020 Robert Gravina. All rights reserved.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
+    let image = UIImage()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    var body: some View {
+        Image(uiImage: image)
+            .background(Color.black)
+            .aspectRatio(contentMode: .fit)
     }
 }
