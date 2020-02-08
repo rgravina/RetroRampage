@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		972CFC5823EC4F7900DB15BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5723EC4F7900DB15BC /* Color.swift */; };
-		972CFC5A23EC4F9100DB15BC /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5923EC4F9100DB15BC /* Bitmap.swift */; };
+		976C416023EE42AF00664C25 /* RetroRampageEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; };
+		976C416123EE42AF00664C25 /* RetroRampageEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		976C416523EE443B00664C25 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5723EC4F7900DB15BC /* Color.swift */; };
+		976C416623EE443F00664C25 /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5923EC4F9100DB15BC /* Bitmap.swift */; };
+		976C416823EE455D00664C25 /* UIImageFromBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C416723EE455D00664C25 /* UIImageFromBitmap.swift */; };
 		9772E35D23EC3B03006F9496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E35C23EC3B03006F9496 /* AppDelegate.swift */; };
 		9772E35F23EC3B03006F9496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E35E23EC3B03006F9496 /* SceneDelegate.swift */; };
 		9772E36123EC3B03006F9496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E36023EC3B03006F9496 /* ContentView.swift */; };
@@ -17,9 +20,36 @@
 		9772E36923EC3B03006F9496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9772E36723EC3B03006F9496 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		976C415E23EE42AF00664C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9772E35123EC3B03006F9496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 976C415823EE42AF00664C25;
+			remoteInfo = RetroRampageEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		976C415023EE414B00664C25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				976C416123EE42AF00664C25 /* RetroRampageEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		972CFC5723EC4F7900DB15BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		972CFC5923EC4F9100DB15BC /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		976C415923EE42AF00664C25 /* RetroRampageEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroRampageEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		976C415C23EE42AF00664C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976C416723EE455D00664C25 /* UIImageFromBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageFromBitmap.swift; sourceTree = "<group>"; };
 		9772E35923EC3B03006F9496 /* RetroRampage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroRampage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9772E35C23EC3B03006F9496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9772E35E23EC3B03006F9496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,10 +61,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		976C415623EE42AF00664C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9772E35623EC3B03006F9496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976C416023EE42AF00664C25 /* RetroRampageEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +100,28 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		976C415A23EE42AF00664C25 /* RetroRampageEngine */ = {
+			isa = PBXGroup;
+			children = (
+				972CFC5B23EC51CE00DB15BC /* Drawing */,
+				976C415C23EE42AF00664C25 /* Info.plist */,
+			);
+			path = RetroRampageEngine;
+			sourceTree = "<group>";
+		};
+		976C416923EE458600664C25 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				976C416723EE455D00664C25 /* UIImageFromBitmap.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		9772E35023EC3B03006F9496 = {
 			isa = PBXGroup;
 			children = (
 				9772E35B23EC3B03006F9496 /* RetroRampage */,
+				976C415A23EE42AF00664C25 /* RetroRampageEngine */,
 				9772E35A23EC3B03006F9496 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9772E35923EC3B03006F9496 /* RetroRampage.app */,
+				976C415923EE42AF00664C25 /* RetroRampageEngine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,8 +138,8 @@
 		9772E35B23EC3B03006F9496 /* RetroRampage */ = {
 			isa = PBXGroup;
 			children = (
+				976C416923EE458600664C25 /* Drawing */,
 				972CFC5C23EC51E700DB15BC /* Application */,
-				972CFC5B23EC51CE00DB15BC /* Drawing */,
 				9772E36423EC3B03006F9496 /* Preview Content */,
 				9772E36A23EC3B03006F9496 /* Info.plist */,
 			);
@@ -99,7 +156,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		976C415423EE42AF00664C25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		976C415823EE42AF00664C25 /* RetroRampageEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 976C416223EE42AF00664C25 /* Build configuration list for PBXNativeTarget "RetroRampageEngine" */;
+			buildPhases = (
+				976C415423EE42AF00664C25 /* Headers */,
+				976C415523EE42AF00664C25 /* Sources */,
+				976C415623EE42AF00664C25 /* Frameworks */,
+				976C415723EE42AF00664C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroRampageEngine;
+			productName = RetroRampageEngine;
+			productReference = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		9772E35823EC3B03006F9496 /* RetroRampage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9772E36D23EC3B03006F9496 /* Build configuration list for PBXNativeTarget "RetroRampage" */;
@@ -107,10 +192,12 @@
 				9772E35523EC3B03006F9496 /* Sources */,
 				9772E35623EC3B03006F9496 /* Frameworks */,
 				9772E35723EC3B03006F9496 /* Resources */,
+				976C415023EE414B00664C25 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				976C415F23EE42AF00664C25 /* PBXTargetDependency */,
 			);
 			name = RetroRampage;
 			productName = RetroRampage;
@@ -127,6 +214,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Robert Gravina";
 				TargetAttributes = {
+					976C415823EE42AF00664C25 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					9772E35823EC3B03006F9496 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -146,11 +236,19 @@
 			projectRoot = "";
 			targets = (
 				9772E35823EC3B03006F9496 /* RetroRampage */,
+				976C415823EE42AF00664C25 /* RetroRampageEngine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		976C415723EE42AF00664C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9772E35723EC3B03006F9496 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,19 +262,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		976C415523EE42AF00664C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976C416623EE443F00664C25 /* Bitmap.swift in Sources */,
+				976C416523EE443B00664C25 /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9772E35523EC3B03006F9496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976C416823EE455D00664C25 /* UIImageFromBitmap.swift in Sources */,
 				9772E35D23EC3B03006F9496 /* AppDelegate.swift in Sources */,
-				972CFC5823EC4F7900DB15BC /* Color.swift in Sources */,
 				9772E35F23EC3B03006F9496 /* SceneDelegate.swift in Sources */,
 				9772E36123EC3B03006F9496 /* ContentView.swift in Sources */,
-				972CFC5A23EC4F9100DB15BC /* Bitmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		976C415F23EE42AF00664C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 976C415823EE42AF00664C25 /* RetroRampageEngine */;
+			targetProxy = 976C415E23EE42AF00664C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9772E36723EC3B03006F9496 /* LaunchScreen.storyboard */ = {
@@ -190,6 +304,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		976C416323EE42AF00664C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBEDSJA2R7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RetroRampageEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertgravina.RetroRampageEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		976C416423EE42AF00664C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MBEDSJA2R7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RetroRampageEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertgravina.RetroRampageEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9772E36B23EC3B03006F9496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -307,6 +475,7 @@
 		9772E36E23EC3B03006F9496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RetroRampage/Preview Content\"";
@@ -327,6 +496,7 @@
 		9772E36F23EC3B03006F9496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RetroRampage/Preview Content\"";
@@ -347,6 +517,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		976C416223EE42AF00664C25 /* Build configuration list for PBXNativeTarget "RetroRampageEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976C416323EE42AF00664C25 /* Debug */,
+				976C416423EE42AF00664C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9772E35423EC3B03006F9496 /* Build configuration list for PBXProject "RetroRampage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
