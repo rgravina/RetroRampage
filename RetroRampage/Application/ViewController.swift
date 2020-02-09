@@ -4,6 +4,7 @@ import RetroRampageEngine
 class ViewController: UIViewController {
     private var imageView: UIImageView
     private var player = Player(position: Vector(x: 4, y: 4))
+    private var lastFrameTime = CACurrentMediaTime()
 
     init() {
         imageView = UIImageView()
@@ -37,6 +38,10 @@ class ViewController: UIViewController {
     }
 
     @objc func update(_ displayLink: CADisplayLink) {
+        let timeStep = displayLink.timestamp - lastFrameTime
+        player.update(timeStep: timeStep)
+        lastFrameTime = displayLink.timestamp
+
         var renderer = Renderer(width: 8, height: 8)
         renderer.draw(player)
         imageView.image = UIImageFromBitmap.create(renderer.bitmap)!

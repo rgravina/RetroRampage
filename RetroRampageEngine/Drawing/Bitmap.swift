@@ -8,7 +8,10 @@ public struct Bitmap {
     
     public subscript(x: Int, y: Int) -> Color {
         get { return pixels[y * width + x] }
-        set { pixels[y * width + x] = newValue}
+        set {
+            guard x >= 0, y >= 0, x < width, y < height else { return }
+            pixels[y * width + x] = newValue
+        }
     }
     
     public init(width: Int, height: Int, color: Color) {
