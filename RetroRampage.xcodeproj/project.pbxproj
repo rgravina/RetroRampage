@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972F5A5223EFC828001CEBCF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5123EFC828001CEBCF /* Renderer.swift */; };
+		972F5A5423EFCE4E001CEBCF /* RendererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */; };
 		976C416023EE42AF00664C25 /* RetroRampageEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; };
 		976C416123EE42AF00664C25 /* RetroRampageEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		976C416523EE443B00664C25 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5723EC4F7900DB15BC /* Color.swift */; };
@@ -14,7 +16,6 @@
 		976C416823EE455D00664C25 /* UIImageFromBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976C416723EE455D00664C25 /* UIImageFromBitmap.swift */; };
 		9772E35D23EC3B03006F9496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E35C23EC3B03006F9496 /* AppDelegate.swift */; };
 		9772E35F23EC3B03006F9496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E35E23EC3B03006F9496 /* SceneDelegate.swift */; };
-		9772E36123EC3B03006F9496 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772E36023EC3B03006F9496 /* ContentView.swift */; };
 		9772E36323EC3B03006F9496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9772E36223EC3B03006F9496 /* Assets.xcassets */; };
 		9772E36623EC3B03006F9496 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9772E36523EC3B03006F9496 /* Preview Assets.xcassets */; };
 		9772E36923EC3B03006F9496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9772E36723EC3B03006F9496 /* LaunchScreen.storyboard */; };
@@ -47,13 +48,14 @@
 /* Begin PBXFileReference section */
 		972CFC5723EC4F7900DB15BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		972CFC5923EC4F9100DB15BC /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		972F5A5123EFC828001CEBCF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererViewController.swift; sourceTree = "<group>"; };
 		976C415923EE42AF00664C25 /* RetroRampageEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroRampageEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		976C415C23EE42AF00664C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		976C416723EE455D00664C25 /* UIImageFromBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageFromBitmap.swift; sourceTree = "<group>"; };
 		9772E35923EC3B03006F9496 /* RetroRampage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroRampage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9772E35C23EC3B03006F9496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9772E35E23EC3B03006F9496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9772E36023EC3B03006F9496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9772E36223EC3B03006F9496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9772E36523EC3B03006F9496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9772E36823EC3B03006F9496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				972CFC5723EC4F7900DB15BC /* Color.swift */,
 				972CFC5923EC4F9100DB15BC /* Bitmap.swift */,
+				972F5A5123EFC828001CEBCF /* Renderer.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -91,11 +94,11 @@
 		972CFC5C23EC51E700DB15BC /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				9772E35C23EC3B03006F9496 /* AppDelegate.swift */,
-				9772E35E23EC3B03006F9496 /* SceneDelegate.swift */,
-				9772E36023EC3B03006F9496 /* ContentView.swift */,
 				9772E36223EC3B03006F9496 /* Assets.xcassets */,
 				9772E36723EC3B03006F9496 /* LaunchScreen.storyboard */,
+				9772E35C23EC3B03006F9496 /* AppDelegate.swift */,
+				9772E35E23EC3B03006F9496 /* SceneDelegate.swift */,
+				972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				976C416623EE443F00664C25 /* Bitmap.swift in Sources */,
+				972F5A5223EFC828001CEBCF /* Renderer.swift in Sources */,
 				976C416523EE443B00664C25 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,8 +281,8 @@
 			files = (
 				976C416823EE455D00664C25 /* UIImageFromBitmap.swift in Sources */,
 				9772E35D23EC3B03006F9496 /* AppDelegate.swift in Sources */,
+				972F5A5423EFCE4E001CEBCF /* RendererViewController.swift in Sources */,
 				9772E35F23EC3B03006F9496 /* SceneDelegate.swift in Sources */,
-				9772E36123EC3B03006F9496 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
