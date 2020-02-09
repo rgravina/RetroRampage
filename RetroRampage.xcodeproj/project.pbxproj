@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		972F5A5223EFC828001CEBCF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5123EFC828001CEBCF /* Renderer.swift */; };
-		972F5A5423EFCE4E001CEBCF /* RendererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */; };
+		972F5A5423EFCE4E001CEBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5323EFCE4E001CEBCF /* ViewController.swift */; };
+		972F5A5923EFD681001CEBCF /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5823EFD681001CEBCF /* Vector.swift */; };
+		972F5A5C23EFD712001CEBCF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5B23EFD712001CEBCF /* Player.swift */; };
 		976C416023EE42AF00664C25 /* RetroRampageEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; };
 		976C416123EE42AF00664C25 /* RetroRampageEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		976C416523EE443B00664C25 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5723EC4F7900DB15BC /* Color.swift */; };
@@ -49,7 +51,9 @@
 		972CFC5723EC4F7900DB15BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		972CFC5923EC4F9100DB15BC /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
 		972F5A5123EFC828001CEBCF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererViewController.swift; sourceTree = "<group>"; };
+		972F5A5323EFCE4E001CEBCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		972F5A5823EFD681001CEBCF /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		972F5A5B23EFD712001CEBCF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		976C415923EE42AF00664C25 /* RetroRampageEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroRampageEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		976C415C23EE42AF00664C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		976C416723EE455D00664C25 /* UIImageFromBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageFromBitmap.swift; sourceTree = "<group>"; };
@@ -98,14 +102,24 @@
 				9772E36723EC3B03006F9496 /* LaunchScreen.storyboard */,
 				9772E35C23EC3B03006F9496 /* AppDelegate.swift */,
 				9772E35E23EC3B03006F9496 /* SceneDelegate.swift */,
-				972F5A5323EFCE4E001CEBCF /* RendererViewController.swift */,
+				972F5A5323EFCE4E001CEBCF /* ViewController.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		972F5A5A23EFD6F3001CEBCF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				972F5A5823EFD681001CEBCF /* Vector.swift */,
+				972F5A5B23EFD712001CEBCF /* Player.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		976C415A23EE42AF00664C25 /* RetroRampageEngine */ = {
 			isa = PBXGroup;
 			children = (
+				972F5A5A23EFD6F3001CEBCF /* Game */,
 				972CFC5B23EC51CE00DB15BC /* Drawing */,
 				976C415C23EE42AF00664C25 /* Info.plist */,
 			);
@@ -271,6 +285,8 @@
 			files = (
 				976C416623EE443F00664C25 /* Bitmap.swift in Sources */,
 				972F5A5223EFC828001CEBCF /* Renderer.swift in Sources */,
+				972F5A5923EFD681001CEBCF /* Vector.swift in Sources */,
+				972F5A5C23EFD712001CEBCF /* Player.swift in Sources */,
 				976C416523EE443B00664C25 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +297,7 @@
 			files = (
 				976C416823EE455D00664C25 /* UIImageFromBitmap.swift in Sources */,
 				9772E35D23EC3B03006F9496 /* AppDelegate.swift in Sources */,
-				972F5A5423EFCE4E001CEBCF /* RendererViewController.swift in Sources */,
+				972F5A5423EFCE4E001CEBCF /* ViewController.swift in Sources */,
 				9772E35F23EC3B03006F9496 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

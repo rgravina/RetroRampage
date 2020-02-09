@@ -5,7 +5,7 @@ public struct Renderer {
         bitmap = Bitmap(width: width, height: height, color: .white)
     }
     
-    public mutating func draw() {
-        bitmap[0, 0] = .blue
+    public mutating func draw(_ player: Player) {
+        bitmap[Int(player.position.x), Int(player.position.y)] = .blue
     }
 }
