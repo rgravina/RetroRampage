@@ -1,4 +1,5 @@
 public struct Player {
+    public let radius: Double = 0.5
     public var position: Vector
     public var velocity: Vector
     
@@ -6,10 +7,11 @@ public struct Player {
         self.position = position
         self.velocity = Vector(x: 1, y: 1)
     }
+}
 
-    mutating public func update(timeStep: Double) {
-        position += velocity * timeStep
-        position.x.formTruncatingRemainder(dividingBy: 8)
-        position.y.formTruncatingRemainder(dividingBy: 8)
+public extension Player {
+    var rect: Rect {
+        let halfSize = Vector(x: radius, y: radius)
+        return Rect(min: position - halfSize, max: position + halfSize)
     }
 }
