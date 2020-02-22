@@ -1,9 +1,15 @@
 import UIKit
 import RetroRampageEngine
 
+private func loadMap() -> Tilemap {
+    let jsonURL = Bundle.main.url(forResource: "Map", withExtension: "json")!
+    let jsonData = try! Data(contentsOf: jsonURL)
+    return try! JSONDecoder().decode(Tilemap.self, from: jsonData)
+}
+
 class ViewController: UIViewController {
     private var imageView: UIImageView
-    private var world = World()
+    private var world = World(map: loadMap())
     private var lastFrameTime = CACurrentMediaTime()
 
     init() {
