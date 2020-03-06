@@ -14,6 +14,7 @@
 		972F5A5423EFCE4E001CEBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5323EFCE4E001CEBCF /* ViewController.swift */; };
 		972F5A5923EFD681001CEBCF /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5823EFD681001CEBCF /* Vector.swift */; };
 		972F5A5C23EFD712001CEBCF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F5A5B23EFD712001CEBCF /* Player.swift */; };
+		9763E8D724122F8600EC5603 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E8D624122F8600EC5603 /* Thing.swift */; };
 		976C416023EE42AF00664C25 /* RetroRampageEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; };
 		976C416123EE42AF00664C25 /* RetroRampageEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 976C415923EE42AF00664C25 /* RetroRampageEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		976C416523EE443B00664C25 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972CFC5723EC4F7900DB15BC /* Color.swift */; };
@@ -62,6 +63,7 @@
 		972F5A5323EFCE4E001CEBCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		972F5A5823EFD681001CEBCF /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		972F5A5B23EFD712001CEBCF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9763E8D624122F8600EC5603 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		976C415923EE42AF00664C25 /* RetroRampageEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RetroRampageEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		976C415C23EE42AF00664C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		976C416723EE455D00664C25 /* UIImageFromBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageFromBitmap.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				97F5049F23F791A50060157A /* World.swift */,
 				970C51E72400FAA90092D6B3 /* Tile.swift */,
 				970C51E92400FAD90092D6B3 /* Tilemap.swift */,
+				9763E8D624122F8600EC5603 /* Thing.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				972F5A5923EFD681001CEBCF /* Vector.swift in Sources */,
 				972F5A5C23EFD712001CEBCF /* Player.swift in Sources */,
 				970C51EA2400FAD90092D6B3 /* Tilemap.swift in Sources */,
+				9763E8D724122F8600EC5603 /* Thing.swift in Sources */,
 				976C416523EE443B00664C25 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
