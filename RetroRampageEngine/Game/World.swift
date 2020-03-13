@@ -24,7 +24,8 @@ public extension World {
         return map.size
     }
 
-    mutating func update(timeStep: Double) {
+    mutating func update(timeStep: Double, input: Input) {
+        player.velocity = input.velocity
         player.position += player.velocity * timeStep
         player.position.x.formTruncatingRemainder(dividingBy: 8)
         player.position.y.formTruncatingRemainder(dividingBy: 8)
